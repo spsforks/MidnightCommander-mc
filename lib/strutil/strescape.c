@@ -62,7 +62,7 @@ str_escape (const char *src, gsize src_len, const char *escaped_chars,
         return NULL;
 
     if (*src == '\0')
-        return strdup ("");
+        return g_strdup ("");
 
     ret = g_string_new ("");
 
@@ -113,7 +113,7 @@ str_unescape (const char *src, gsize src_len, const char *unescaped_chars,
         return NULL;
 
     if (*src == '\0')
-        return strdup ("");
+        return g_strdup ("");
 
     ret = g_string_sized_new (16);
 
