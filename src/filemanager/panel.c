@@ -857,11 +857,11 @@ repaint_file (WPanel *panel, int file_index, file_attr_t attr)
         const int file_color =
             attr == FATTR_CURRENT || attr == FATTR_MARKED_CURRENT ? SELECTED_COLOR : NORMAL_COLOR;
 
-        const int scroll_left_char_color =
-            panel->list_format == list_long ? file_color : NORMAL_COLOR;
-
         if ((ret_frm & FILENAME_SCROLL_LEFT) != 0)
         {
+            const int scroll_left_char_color =
+                panel->list_format == list_long ? file_color : NORMAL_COLOR;
+
             widget_gotoyx (w, ypos, offset);
             tty_setcolor (scroll_left_char_color);
             tty_print_string (panel_filename_scroll_left_char);
