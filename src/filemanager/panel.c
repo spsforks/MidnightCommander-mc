@@ -3205,13 +3205,10 @@ panel_select_sort_order (WPanel *panel)
 }
 
 /* --------------------------------------------------------------------------------------------- */
-
 /**
- * panel_content_scroll_left:
- * @param panel the pointer to the panel on which we operate
+ * Scroll long filename to left
  *
- * scroll long filename to the left (decrement scroll pointer)
- *
+ * @param panel object
  */
 
 static void
@@ -3230,11 +3227,9 @@ panel_content_scroll_left (WPanel *panel)
 
 /* --------------------------------------------------------------------------------------------- */
 /**
- * panel_content_scroll_right:
- * @param panel the pointer to the panel on which we operate
+ * Scroll long filename to right
  *
- * scroll long filename to the right (increment scroll pointer)
- *
+ * @param panel object
  */
 
 static void
