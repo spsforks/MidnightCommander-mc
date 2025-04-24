@@ -157,6 +157,7 @@ typedef struct
 /*** global variables defined in .c file *********************************************************/
 
 extern const char *op_names[3];
+extern gboolean preserve_ext2_attr;
 
 /*** declarations of public functions ************************************************************/
 
